@@ -1,5 +1,5 @@
 // let debug;
-import utils = from './src/utils';
+import utils from './src/utils';
 const throttle = utils.throttle;
 const debounce = utils.debounce;
 
