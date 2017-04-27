@@ -1,5 +1,5 @@
 /* jshint devel: true */
-import oUtils from 'o-utils';
+import * as oUtils from 'o-utils';
 
 let debug;
 
