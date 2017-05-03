@@ -1,7 +1,13 @@
 {
+  "name": "o-viewport",
+  "version": "0.0.0",
+  "main": "main.js",
   "private": true,
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "dependencies": {
+    "o-utils": "git+ssh://git@github.com:Financial-Times/o-utils.git"
   },
   "devDependencies": {
     "babel-loader": "^5.3.2",
