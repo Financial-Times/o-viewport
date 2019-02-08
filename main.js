@@ -1,5 +1,6 @@
 // let debug;
-const utils = require('./src/utils');
+import utils from './src/utils';
+
 const throttle = utils.throttle;
 const debounce = utils.debounce;
 
@@ -139,7 +140,7 @@ function stopListeningTo(eventType) {
 	}
 }
 
-module.exports = {
+export default {
 	debug: function() {
 		// debug = true;
 		utils.debug();

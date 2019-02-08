@@ -1,5 +1,5 @@
 /* jshint devel: true */
-const oUtils = require('o-utils');
+import oUtils from 'o-utils';
 
 let debug;
 
@@ -89,7 +89,7 @@ function getVisibility() {
 	return document[hiddenName];
 }
 
-module.exports = {
+export default {
 	debug: function() {
 		debug = true;
 	},
