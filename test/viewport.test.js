@@ -2,7 +2,7 @@
 
 import proclaim from 'proclaim';
 
-import sinon from 'sinon/pkg/sinon';
+// import sinon from 'sinon/pkg/sinon';
 import oViewport from './../main.js';
 import utils from './../src/utils.js';
 
