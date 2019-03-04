@@ -140,14 +140,27 @@ function stopListeningTo(eventType) {
 	}
 }
 
+function debug () {
+	// debug = true;
+	utils.debug();
+}
+
 export default {
-	debug: function() {
-		// debug = true;
-		utils.debug();
-	},
-	listenTo: listenTo,
-	stopListeningTo: stopListeningTo,
-	setThrottleInterval: setThrottleInterval,
+	debug,
+	listenTo,
+	stopListeningTo,
+	setThrottleInterval,
+	getOrientation: utils.getOrientation,
+	getSize: utils.getSize,
+	getScrollPosition: utils.getScrollPosition,
+	getVisibility: utils.getVisibility
+};
+
+export {
+	debug,
+	listenTo,
+	stopListeningTo,
+	setThrottleInterval,
 	getOrientation: utils.getOrientation,
 	getSize: utils.getSize,
 	getScrollPosition: utils.getScrollPosition,
