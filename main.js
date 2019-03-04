@@ -150,19 +150,19 @@ export default {
 	listenTo,
 	stopListeningTo,
 	setThrottleInterval,
-	getOrientation: utils.getOrientation,
-	getSize: utils.getSize,
-	getScrollPosition: utils.getScrollPosition,
-	getVisibility: utils.getVisibility
-};
+	...utils
+}
 
 export {
 	debug,
 	listenTo,
 	stopListeningTo,
-	setThrottleInterval,
-	getOrientation: utils.getOrientation,
-	getSize: utils.getSize,
-	getScrollPosition: utils.getScrollPosition,
-	getVisibility: utils.getVisibility
-};
+	setThrottleInterval
+}
+
+export {
+	getOrientation,
+	getSize,
+	getScrollPosition,
+	getVisibility
+} from './src/utils'
