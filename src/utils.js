@@ -1,5 +1,8 @@
 /* jshint devel: true */
-import oUtils from 'o-utils';
+import {
+	debounce,
+	throttle
+} from 'o-utils';
 
 let debug;
 
@@ -89,18 +92,34 @@ function getVisibility() {
 	return document[hiddenName];
 }
 
+function enableDebugMode () {
+	debug = true;
+}
+
 export default {
-	debug: function() {
-		debug = true;
-	},
-	broadcast: broadcast,
-	getWidth: getWidth,
-	getHeight: getHeight,
-	getSize: getSize,
-	getScrollPosition: getScrollPosition,
-	getVisibility: getVisibility,
-	getOrientation: getOrientation,
-	detectVisiblityAPI: detectVisiblityAPI,
-	debounce: oUtils.debounce,
-	throttle: oUtils.throttle
+	debug: enableDebugMode,
+	broadcast,
+	getWidth,
+	getHeight,
+	getSize,
+	getScrollPosition,
+	getVisibility,
+	getOrientation,
+	detectVisiblityAPI,
+	debounce,
+	throttle
+};
+
+export {
+	enableDebugMode as debug,
+	broadcast,
+	getWidth,
+	getHeight,
+	getSize,
+	getScrollPosition,
+	getVisibility,
+	getOrientation,
+	detectVisiblityAPI,
+	debounce,
+	throttle
 };

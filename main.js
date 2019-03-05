@@ -1,8 +1,10 @@
 // let debug;
-import utils from './src/utils';
+import * as utils from './src/utils';
 
-const throttle = utils.throttle;
-const debounce = utils.debounce;
+const {
+	debounce,
+	throttle
+} = utils;
 
 const listeners = {};
 const intervals = {
@@ -153,7 +155,7 @@ export default {
 	getOrientation: utils.getOrientation,
 	getSize: utils.getSize,
 	getScrollPosition: utils.getScrollPosition,
-	getVisibility: utils.getVisibility
+	getVisibility: utils.getVisibility,
 };
 
 export {
@@ -168,4 +170,4 @@ export {
 	getSize,
 	getScrollPosition,
 	getVisibility
-} from './src/utils';
+} from './src/utils.js';
