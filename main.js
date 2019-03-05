@@ -150,7 +150,10 @@ export default {
 	listenTo,
 	stopListeningTo,
 	setThrottleInterval,
-	...utils
+	getOrientation: getOrientation.utils,
+	getSize: getSize.utils,
+	getScrollPosition: getScrollPosition.utils,
+	getVisibility: getVisibility.utils
 }
 
 export {
