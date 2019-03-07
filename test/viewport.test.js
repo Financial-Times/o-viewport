@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-import proclaim from 'proclaim';
+const proclaim = require('proclaim');
 
 // import sinon from 'sinon/pkg/sinon';
 const oViewport = require('./../main.js');
