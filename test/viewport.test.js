@@ -3,8 +3,8 @@
 import proclaim from 'proclaim';
 
 // import sinon from 'sinon/pkg/sinon';
-import oViewport from './../main.js';
-import utils from './../src/utils.js';
+const oViewport = require('./../main.js');
+const utils = require('./../src/utils.js');
 
 function isPhantom() {
 	return /PhantomJS/.test(navigator.userAgent);
