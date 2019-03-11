@@ -1,10 +1,10 @@
 /* eslint-env mocha */
 
-import proclaim from 'proclaim';
+const proclaim = require('proclaim');
 
 // import sinon from 'sinon/pkg/sinon';
-import oViewport from './../main.js';
-import utils from './../src/utils.js';
+const oViewport = require('./../main.js');
+const utils = require('./../src/utils.js');
 
 function isPhantom() {
 	return /PhantomJS/.test(navigator.userAgent);
@@ -18,6 +18,16 @@ describe('o-viewport utils', function () {
 
 	it('debounce should be exposed', function() {
 		proclaim.isTypeOf(utils.debounce, 'function');
+	});
+});
+
+describe('getSize', function() {
+	it('returns a height and width', function () {
+		const size = utils.getSize();
+		const height = size ? size.height : null;
+		const width = size ? size.width : null;
+		proclaim.isTrue(!isNaN(height), 'Expected getSize to return a numerical height.');
+		proclaim.isTrue(!isNaN(width), 'Expected getSize to return a numerical width.');
 	});
 });
 
@@ -93,33 +103,6 @@ describe('o-viewport', function() {
 		proclaim.isTypeOf(viewportSize.width, 'number');
 		proclaim.isTypeOf(viewportSize.height, 'number');
 	});
-
-	// it('should pass the flag to get width of the viewport without scrollbars', function() {
-	// 	let widthSpy = sinon.spy(utils, 'getWidth');
-	// 	let heightSpy = sinon.spy(utils, 'getHeight');
-
-	// 	const viewportSizeNoScrollbars = oViewport.getSize(true);
-	// 	proclaim.isTypeOf(viewportSizeNoScrollbars.width, 'number');
-	// 	proclaim.isTypeOf(viewportSizeNoScrollbars.height, 'number');
-	// 	proclaim.isTrue(widthSpy.calledWith(true));
-	// 	proclaim.isTrue(heightSpy.calledWith(true));
-	// 	proclaim.isFalse(widthSpy.calledWith(undefined));
-	// 	proclaim.isFalse(heightSpy.calledWith(undefined));
-	// 	proclaim.equal(widthSpy.callCount, 1);
-	// 	proclaim.equal(heightSpy.callCount, 1);
-
-	// 	const viewportSize = oViewport.getSize();
-	// 	proclaim.isTypeOf(viewportSize.width, 'number');
-	// 	proclaim.isTypeOf(viewportSize.height, 'number');
-	// 	proclaim.isTrue(widthSpy.calledWith(undefined));
-	// 	proclaim.isTrue(heightSpy.calledWith(undefined));
-	// 	proclaim.equal(widthSpy.callCount, 2);
-	// 	proclaim.equal(heightSpy.callCount, 2);
-
-
-	// 	widthSpy.restore();
-	// 	heightSpy.restore();
-	// });
 
 	it('should get the orientation of the viewport', function() {
 		proclaim.isTrue(oViewport.getOrientation() === 'portrait' || oViewport.getOrientation() === 'landscape');
