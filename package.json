@@ -1,6 +1,6 @@
 {
     "main": "main.js",
-    "name": "o-viewport",
+    "name": "@financial-times/o-viewport",
     "devDependencies": {
         "eslint": "^7.9.0",
         "eslint-config-origami-component": "^2.1.0",
