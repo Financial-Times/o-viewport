@@ -8,7 +8,7 @@
         "stylelint-config-origami-component": "^1.0.4"
     },
     "peerDependencies": {
-        "@financial-times/o-utils": "^1.0.0"
+        "@financial-times/o-utils": "^100.0.0-3"
     },
     "description": "Utility for attaching debounced listeners to resize, scroll, orientation and visibility events on window",
     "publishConfig": {
