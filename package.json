@@ -1,26 +1,36 @@
 {
-    "name": "@financial-times/o-viewport",
-    "version": "100.0.0-8",
-    "description": "Utility for attaching debounced listeners to resize, scroll, orientation and visibility events on window",
-    "license": "MIT",
-    "type": "module",
-    "exports": {
-        ".": {
-            "browser": "./main.js"
-        }
-    },
-    "browser": "./main.js",
-    "types": "types",
-    "devDependencies": {
-        "eslint": "^7.9.0",
-        "eslint-config-origami-component": "^2.1.0",
-        "origami-ci-tools": "^2.1.0",
-        "stylelint-config-origami-component": "^1.0.4"
-    },
-    "peerDependencies": {
-        "@financial-times/o-utils": "^100.0.0-9"
-    },
-    "publishConfig": {
-        "registry": "https://origami-npm-registry-prototype.herokuapp.com"
+  "name": "@financial-times/o-viewport",
+  "version": "100.0.0-10",
+  "description": "Utility for attaching debounced listeners to resize, scroll, orientation and visibility events on window",
+  "keywords": [],
+  "homepage": "https://github.com/Financial-Times/o-viewport#readme",
+  "bugs": {
+    "url": "https://github.com/Financial-Times/o-viewport/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Financial-Times/o-viewport.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "browser": "./main.js"
     }
+  },
+  "browser": "./main.js",
+  "types": "types",
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-origami-component": "^2.1.0",
+    "origami-ci-tools": "^2.1.0",
+    "stylelint-config-origami-component": "^1.0.4"
+  },
+  "peerDependencies": {
+    "@financial-times/o-utils": "^100.0.0-10"
+  },
+  "publishConfig": {
+    "registry": "https://origami-npm-registry-prototype.herokuapp.com"
+  }
 }
