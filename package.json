@@ -2,7 +2,15 @@
     "name": "@financial-times/o-viewport",
     "version": "100.0.0-7",
     "description": "Utility for attaching debounced listeners to resize, scroll, orientation and visibility events on window",
-    "browser": "main.js",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        ".": {
+            "browser": "./main.js"
+        }
+    },
+    "browser": "./main.js",
+    "types": "types",
     "devDependencies": {
         "eslint": "^7.9.0",
         "eslint-config-origami-component": "^2.1.0",
