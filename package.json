@@ -1,6 +1,6 @@
 {
   "name": "@financial-times/o-viewport",
-  "version": "100.0.0-11",
+  "version": "100.0.0-12",
   "description": "Utility for attaching debounced listeners to resize, scroll, orientation and visibility events on window",
   "keywords": [],
   "homepage": "https://github.com/Financial-Times/o-viewport#readme",
@@ -29,7 +29,7 @@
     "typescript": "^4.0.5"
   },
   "peerDependencies": {
-    "@financial-times/o-utils": "^100.0.0-11"
+    "@financial-times/o-utils": "^100.0.0-12"
   },
   "publishConfig": {
     "registry": "https://origami-npm-registry-prototype.herokuapp.com"
